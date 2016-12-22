@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+<property>
+  <name>dfs.blockreport.intervalMsec</name>
+  <value>3</value>
+  <description>Determines delete block reporting interval in milliseconds.</description>
+</property>
+
+<property>
+  <name>dfs.use.inline.checksum</name>
+  <value>false</value>
+</property>
+
+<property>
+  <name>use.ctdr</name>
+  <value>false</value>
+</property>
+
+<property>
+  <name>num.src.node</name>
+  <value>7</value>
+</property>
+
+<property>
+  <name>num.parity.node</name>
+  <value>4</value>
+</property>
+
+<property>
+  <name>dfs.http.address</name>
+  <value>10.10.10.23:50070</value>
+</property>
+
+<property>
+  <name>dfs.replication</name>
+  <value>1</value>
+</property>
+
+<property>
+  <name>hdfs.raid.parity.initial.repl</name>
+  <value>1</value>
+</property>
+
+<property>
+  <name>raid.blockfix.classname</name>
+  <value>org.apache.hadoop.raid.LocalBlockIntegrityMonitor</value>
+</property>
+
+<property>
+  <name>raid.config.file</name>
+  <value>/home/ncsgroup/xiaolu/hadoop-20-ctdr/conf/raid.xml</value>
+</property>
+
+<property> 
+    <name>raid.mod.time.period</name> 
+    <value>0</value> 
+</property>
+
+<property> 
+    <name>raid.policy.rescan.interval</name> 
+    <value>1000000</value>
+</property>
+
+<property>
+  <name>hdfs.raid.stripe.store.class</name>
+  <value>org.apache.hadoop.raid.LocalStripeStore</value>
+</property>
+
+<property>
+  <name>hdfs.raid.preencoding.stripe.dir</name>
+  <value>/home/ncsgroup/xiaolu/hadoop-20-ctdr/preEncStripeStore</value>
+</property>
+
+<property>
+  <name>hdfs.raid.local.stripe.dir</name>
+  <value>/home/ncsgroup/xiaolu/hadoop-20-ctdr/stripeStore</value>
+</property>
+
+<property>
+  <name>raid.classname</name>
+  <value>org.apache.hadoop.raid.LocalRaidNode</value>
+</property>
+
+<property>
+  <name>hdfs.raid.user.dir.prefix</name>
+  <value>/user/ncsgroup/xiaolu</value>
+</property>
+
+<property>
+  <name>fs.hdfs.impl</name>
+  <value>org.apache.hadoop.hdfs.DistributedRaidFileSystem</value>
+</property>
+
+<property>
+  <name>dfs.block.replicator.classname</name>
+  <value>org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyCtdr</value>
+</property>
+
+<property>
+  <name>dfs.safemode.threshold.pct</name>
+  <value>0</value>
+</property>
+
+<property>
+    <name>dfs.f4.accepted.codecs</name> 
+    <value>rs</value>
+</property>
+
+<property>
+  <name>dfs.block.size</name>
+  <value>67108864</value>
+</property>
+
+<property>
+  <name>raid.encoder.parallelism</name>
+  <value>1</value>
+</property>
+
+<property>
+  <name>raid.recover.parallel.num</name>
+  <value>1</value>
+</property>
+
+<property>
+  <name>raid.decode.parallel.num</name>
+  <value>4</value>
+</property>
+
+<property>
+  <name>raid.codecs.json</name>
+    <value>[
+{
+"id" : "rs",
+"parity_dir" : "/rs",
+"stripe_length" : 6,
+"parity_length" : 3,
+"priority" : 100,
+"erasure_code" : "org.apache.hadoop.raid.JerasureCode",
+"description" : "js code",
+"simulate_block_fix": false,
+"dir_raid" : true
+}
+]</value>
+  <description>JSon string that contains all Raid codecs</description>
+</property>
+
+</configuration>
+

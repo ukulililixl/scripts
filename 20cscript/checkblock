@@ -1,0 +1,45 @@
+/rs <dir>
+/rs/user <dir>
+/rs/user/ncsgroup <dir>
+/rs/user/ncsgroup/raidTest 1073741824 bytes, 4 block(s):  OK
+0. blk_-2313867369335376137_1002 len=268435456 repl=1 [10.10.10.25:50010]
+1. blk_-8774448825736397523_1003 len=268435456 repl=1 [10.10.10.15:50010]
+2. blk_-103458685246470179_1003 len=268435456 repl=1 [10.10.10.21:50010]
+3. blk_-7372814918457420587_1003 len=268435456 repl=1 [10.10.10.19:50010]
+
+/tmp <dir>
+/tmp/rs <dir>
+/tmp/rs/localRaid2016-12-20-22-26-40-343 <dir>
+/tmp/rs/localRaid2016-12-20-22-26-40-343/partial_37c833cf269437d58747a615d0e44eae_1482243914670_1_1482244010252.-3118366350752916202 <dir>
+/tmp/rs/localRaid2016-12-20-22-26-40-343/partial_37c833cf269437d58747a615d0e44eae_1482243914670_1_1482244010252.-3118366350752916202/tmp <dir>
+/user <dir>
+/user/ncsgroup <dir>
+/user/ncsgroup/raidTest <dir>
+/user/ncsgroup/raidTest/input1 2684354560 bytes, 10 block(s):  OK
+0. blk_-7765338965828153891_1001 len=268435456 repl=1 [10.10.10.26:50010]
+1. blk_-8623339193162126298_1001 len=268435456 repl=1 [10.10.10.32:50010]
+2. blk_-1675674706971640723_1001 len=268435456 repl=1 [10.10.10.33:50010]
+3. blk_-9013104067371386650_1001 len=268435456 repl=1 [10.10.10.18:50010]
+4. blk_-6258112295734918587_1001 len=268435456 repl=1 [10.10.10.30:50010]
+5. blk_-2678543273526740424_1001 len=268435456 repl=1 [10.10.10.27:50010]
+6. blk_-4052333334141090805_1001 len=268435456 repl=1 [10.10.10.28:50010]
+7. blk_-3239932888001562579_1001 len=268435456 repl=1 [10.10.10.11:50010]
+8. blk_-7506814562200574930_1001 len=268435456 repl=1 [10.10.10.17:50010]
+9. blk_-4479825883602766747_1001 len=268435456 repl=1 [10.10.10.29:50010]
+
+Status: HEALTHY
+ Total size:	3758096384 B (Total open files size: 536870912 B)
+ Total dirs:	11
+ Total files:	2 (Files currently being written: 1)
+ Total blocks (validated):	14 (avg. block size 268435456 B) (Total open file blocks (not validated): 2)
+ Minimally replicated blocks:	14 (100.0 %)
+ Over-replicated blocks:	0 (0.0 %)
+ Under-replicated blocks:	0 (0.0 %)
+ Mis-replicated blocks:		0 (0.0 %)
+ Default replication factor:	1
+ Average block replication:	1.0
+ Corrupt blocks:		0
+ Missing replicas:		0 (0.0 %)
+
+
+The filesystem under path '/' is HEALTHY
