@@ -1,0 +1,41 @@
+server=mumbai 35.154.106.140
+inner-region client=mumbai2 35.154.91.26
+Connecting to host 35.154.106.140, port 5201
+[  4] local 172.31.6.221 port 36054 connected to 35.154.106.140 port 5201
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec  85.3 MBytes   716 Mbits/sec  311    366 KBytes       
+[  4]   1.00-2.00   sec  85.0 MBytes   713 Mbits/sec    0    516 KBytes       
+[  4]   2.00-3.00   sec  85.0 MBytes   713 Mbits/sec  250    361 KBytes       
+[  4]   3.00-4.00   sec  86.2 MBytes   723 Mbits/sec    0    512 KBytes       
+[  4]   4.00-5.00   sec  86.2 MBytes   724 Mbits/sec    0    631 KBytes       
+[  4]   5.00-6.00   sec  85.0 MBytes   713 Mbits/sec    0    728 KBytes       
+[  4]   6.00-7.00   sec  85.0 MBytes   713 Mbits/sec  272    279 KBytes       
+[  4]   7.00-8.00   sec  85.0 MBytes   713 Mbits/sec    0    458 KBytes       
+[  4]   8.00-9.00   sec  86.2 MBytes   724 Mbits/sec    0    587 KBytes       
+[  4]   9.00-10.00  sec  85.0 MBytes   713 Mbits/sec    0    690 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-10.00  sec   854 MBytes   716 Mbits/sec  833             sender
+[  4]   0.00-10.00  sec   851 MBytes   714 Mbits/sec                  receiver
+
+iperf Done.
+client=saopaulo 52.67.112.53
+Connecting to host 35.154.106.140, port 5201
+[  4] local 172.31.1.172 port 52504 connected to 35.154.106.140 port 5201
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec   182 KBytes  1.49 Mbits/sec    0   28.3 KBytes       
+[  4]   1.00-2.00   sec   915 KBytes  7.49 Mbits/sec    0    226 KBytes       
+[  4]   2.00-3.00   sec  4.11 MBytes  34.5 Mbits/sec    0   1.77 MBytes       
+[  4]   3.00-4.00   sec  3.75 MBytes  31.5 Mbits/sec  184   1.69 MBytes       
+[  4]   4.00-5.00   sec  3.75 MBytes  31.5 Mbits/sec    0   1.69 MBytes       
+[  4]   5.00-6.00   sec  3.75 MBytes  31.5 Mbits/sec    0   1.69 MBytes       
+[  4]   6.00-7.00   sec  3.75 MBytes  31.5 Mbits/sec    0   1.69 MBytes       
+[  4]   7.00-8.00   sec  5.00 MBytes  41.9 Mbits/sec    0   1.69 MBytes       
+[  4]   8.00-9.00   sec  3.75 MBytes  31.5 Mbits/sec    0   1.69 MBytes       
+[  4]   9.00-10.00  sec  5.00 MBytes  41.9 Mbits/sec    0   1.69 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-10.00  sec  33.9 MBytes  28.5 Mbits/sec  184             sender
+[  4]   0.00-10.00  sec  32.5 MBytes  27.2 Mbits/sec                  receiver
+
+iperf Done.

@@ -1,0 +1,21 @@
+server=saopaulo 52.67.242.96
+inner-region client=saopaulo2 52.67.24.227
+Connecting to host 52.67.242.96, port 5201
+[  4] local 172.31.4.186 port 53698 connected to 52.67.242.96 port 5201
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec  58.8 MBytes   493 Mbits/sec  110    174 KBytes       
+[  4]   1.00-2.00   sec  61.6 MBytes   517 Mbits/sec   14    181 KBytes       
+[  4]   2.00-3.00   sec  61.7 MBytes   518 Mbits/sec    9    175 KBytes       
+[  4]   3.00-4.00   sec  56.8 MBytes   476 Mbits/sec   10    204 KBytes       
+[  4]   4.00-5.00   sec  56.3 MBytes   472 Mbits/sec   17    182 KBytes       
+[  4]   5.00-6.00   sec  59.7 MBytes   500 Mbits/sec   17    185 KBytes       
+[  4]   6.00-7.00   sec  51.7 MBytes   434 Mbits/sec   13    185 KBytes       
+[  4]   7.00-8.00   sec  61.3 MBytes   514 Mbits/sec   17    143 KBytes       
+[  4]   8.00-9.00   sec  60.7 MBytes   509 Mbits/sec   20    188 KBytes       
+[  4]   9.00-10.00  sec  54.1 MBytes   454 Mbits/sec   20    157 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-10.00  sec   583 MBytes   489 Mbits/sec  247             sender
+[  4]   0.00-10.00  sec   582 MBytes   488 Mbits/sec                  receiver
+
+iperf Done.

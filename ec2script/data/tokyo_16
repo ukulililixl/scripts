@@ -1,0 +1,61 @@
+server=tokyo 54.64.152.3
+inner-region client=tokyo2 52.193.23.50
+Connecting to host 54.64.152.3, port 5201
+[  4] local 172.31.19.192 port 45568 connected to 54.64.152.3 port 5201
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec  69.8 MBytes   585 Mbits/sec    0   1.55 MBytes       
+[  4]   1.00-2.00   sec  67.5 MBytes   566 Mbits/sec    0   1.55 MBytes       
+[  4]   2.00-3.00   sec  70.0 MBytes   587 Mbits/sec    0   1.55 MBytes       
+[  4]   3.00-4.00   sec  67.5 MBytes   566 Mbits/sec    0   1.55 MBytes       
+[  4]   4.00-5.00   sec  68.8 MBytes   577 Mbits/sec    0   1.55 MBytes       
+[  4]   5.00-6.00   sec  67.5 MBytes   566 Mbits/sec    0   1.55 MBytes       
+[  4]   6.00-7.00   sec  70.0 MBytes   587 Mbits/sec    0   1.55 MBytes       
+[  4]   7.00-8.00   sec  70.0 MBytes   587 Mbits/sec    0   1.55 MBytes       
+[  4]   8.00-9.00   sec  57.5 MBytes   482 Mbits/sec    0   1.55 MBytes       
+[  4]   9.00-10.00  sec  70.0 MBytes   587 Mbits/sec    0   1.55 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-10.00  sec   679 MBytes   569 Mbits/sec    0             sender
+[  4]   0.00-10.00  sec   676 MBytes   567 Mbits/sec                  receiver
+
+iperf Done.
+client=mumbai 35.154.106.140
+Connecting to host 54.64.152.3, port 5201
+[  4] local 172.31.4.149 port 48612 connected to 54.64.152.3 port 5201
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec   803 KBytes  6.58 Mbits/sec    0    113 KBytes       
+[  4]   1.00-2.00   sec  4.39 MBytes  36.8 Mbits/sec   90    315 KBytes       
+[  4]   2.00-3.00   sec  2.50 MBytes  21.0 Mbits/sec  185    428 KBytes       
+[  4]   3.00-4.00   sec  3.75 MBytes  31.5 Mbits/sec   50    164 KBytes       
+[  4]   4.00-5.00   sec  1.25 MBytes  10.5 Mbits/sec    1    706 KBytes       
+[  4]   5.00-6.00   sec  3.75 MBytes  31.5 Mbits/sec    0    749 KBytes       
+[  4]   6.00-7.00   sec  3.75 MBytes  31.5 Mbits/sec    0    779 KBytes       
+[  4]   7.00-8.00   sec  2.50 MBytes  21.0 Mbits/sec    0    795 KBytes       
+[  4]   8.00-9.00   sec  2.50 MBytes  21.0 Mbits/sec    0    802 KBytes       
+[  4]   9.00-10.00  sec  3.75 MBytes  31.5 Mbits/sec    0    805 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-10.00  sec  28.9 MBytes  24.3 Mbits/sec  326             sender
+[  4]   0.00-10.00  sec  26.7 MBytes  22.4 Mbits/sec                  receiver
+
+iperf Done.
+client=saopaulo 52.67.112.53
+Connecting to host 54.64.152.3, port 5201
+[  4] local 172.31.1.172 port 46918 connected to 54.64.152.3 port 5201
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec   346 KBytes  2.84 Mbits/sec    0   56.6 KBytes       
+[  4]   1.00-2.00   sec  3.04 MBytes  25.5 Mbits/sec    0    905 KBytes       
+[  4]   2.00-3.00   sec  3.75 MBytes  31.5 Mbits/sec  181   1.91 MBytes       
+[  4]   3.00-4.00   sec  3.75 MBytes  31.5 Mbits/sec   19    238 KBytes       
+[  4]   4.00-5.00   sec  3.75 MBytes  31.5 Mbits/sec    0   1.03 MBytes       
+[  4]   5.00-6.00   sec  2.50 MBytes  21.0 Mbits/sec    0   1.08 MBytes       
+[  4]   6.00-7.00   sec  5.00 MBytes  42.0 Mbits/sec    0   1.12 MBytes       
+[  4]   7.00-8.00   sec  5.00 MBytes  41.9 Mbits/sec    0   1.14 MBytes       
+[  4]   8.00-9.00   sec  3.75 MBytes  31.5 Mbits/sec    0   1.16 MBytes       
+[  4]   9.00-10.00  sec  3.75 MBytes  31.5 Mbits/sec    0   1.16 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-10.00  sec  34.6 MBytes  29.1 Mbits/sec  200             sender
+[  4]   0.00-10.00  sec  33.1 MBytes  27.8 Mbits/sec                  receiver
+
+iperf Done.
