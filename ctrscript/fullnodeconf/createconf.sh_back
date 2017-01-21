@@ -1,0 +1,51 @@
+#!/bin/bash
+# usage:
+
+K=$1
+M=$2
+POLICY=$3
+NODEID=$4
+N=`expr $K + $M`
+DEFAULTCONF=/home/ncsgroup/CTDR/xiaoluconf/configdefault.xml
+REALCONFDIR=/home/ncsgroup/CTDR/conf
+CURRENTDIR=/home/ncsgroup/CTDR/xiaoluconf
+
+echo $N
+
+# 0. find FS
+TMP=`ssh ${NODEID} "find -name finalized"`
+echo "the block dir on hdfs datanode is $TMP"
+FS=${TMP:2}
+FS=/home/ncsgroup/$FS
+echo "the block dir of ctr is $FS"
+
+# 1. config for coordinator first
+for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+do
+cp $DEFAULTCONF $CURRENTDIR/config$i.xml
+sed -i "2a\
+<attribute><name>erasure.code.k</name><value>$K</value></attribute>" $CURRENTDIR/config$i.xml
+
+sed -i "3a\
+<attribute><name>erasure.code.n</name><value>$N</value></attribute>" $CURRENTDIR/config$i.xml
+
+sed -i "7a\
+<attribute><name>degraded.read.policy</name><value>$POLICY</value></attribute>" $CURRENTDIR/config$i.xml
+
+sed -i "14a\
+<attribute><name>hdfs.block.directory</name><value>$FS</value></attribute>" $CURRENTDIR/config$i.xml
+
+if [ $i -eq 12 ]
+then
+sed -i "34a\
+<attribute><name>local.ip.address</name><value>127.0.0.1</value></attribute>" $CURRENTDIR/config$i.xml
+else
+IP=`expr $i + 10`
+sed -i "34a\
+<attribute><name>local.ip.address</name><value>10.10.10.$IP</value></attribute>" $CURRENTDIR/config$i.xml
+fi
+
+echo "copy config$i.xml and rsEncMat_${K}_${M} to cloud-node$i"
+scp $CURRENTDIR/config$i.xml cloud-node$i:/home/ncsgroup/CTDR/conf/config.xml
+scp $CURRENTDIR/rsEncMat_${K}_${M} cloud-node$i:/home/ncsgroup/CTDR/conf/rsEncMat
+done
